@@ -1,0 +1,66 @@
+;bits 64
+;default rel
+;global main
+section .bss
+gomi: resb 20
+section .data
+gomo: db 55, 'gomijan', 0
+section .text
+main:
+ret
+_mov:
+MOV RAX, 53
+mov RCX, 3
+mov rax, 18446744073709511730
+mov rax, 17293822569102664754
+mov r8, 56
+mov r8, 17293822569102664754
+mov r8, 18446744073709511730
+
+mov rax, rcx
+mov rax, r9
+mov r9, rax
+_add:
+add rax, 1
+add rax, 2147483647
+add rax, 18446744071562067968
+add rax, 18446744073709551488
+add rax, 18446744073709551487
+
+add rcx, 1
+add rcx, 2147483647
+add rcx, 18446744071562067968
+add rcx, 18446744073709551488
+add rcx, 18446744073709551487
+add r9, 5
+add r9, 2147483647
+add r9, 18446744071562067968
+add r9, 18446744073709551488
+add r9, 18446744073709551487
+add rax, rcx
+add rax, r9
+add r9, rax
+_sub:
+sub rax, 1
+sub rax, 2147483647
+sub rax, 18446744071562067968
+sub rax, 18446744073709551488
+sub rax, 18446744073709551487
+
+sub rcx, 1
+sub rcx, 2147483647
+sub rcx, 18446744071562067968
+sub rcx, 18446744073709551488
+sub rcx, 18446744073709551487
+
+sub r9, 5
+sub r9, 2147483647
+sub r9, 18446744071562067968
+sub r9, 18446744073709551488
+sub r9, 18446744073709551487
+
+sub rax, rcx
+sub rax, r9
+sub r9, rax
+test:
+ret
